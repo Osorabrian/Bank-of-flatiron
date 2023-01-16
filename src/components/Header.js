@@ -1,5 +1,6 @@
 import React from "react";
 
+// create Header component
 function Header(){
     return (
         <header style={{backgroundColor: "black", color: "white", padding: "10px"}}>
