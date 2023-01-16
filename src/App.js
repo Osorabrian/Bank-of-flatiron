@@ -12,8 +12,16 @@ function App() {
 
   // function to add transactions to the original array
   function addTransaction(transactionObj){
-    setTransactions([...transactions, transactionObj])
-    console.log(transactions)
+    fetch("http://localhost:8001/transactions", {
+      method: "POST",
+      headers: {
+        "Content-Type":"application/json",
+        "Accept": "application/json"
+      },
+      body: JSON.stringify(transactionObj)
+    })
+    .then(response => response.json())
+    .then(data => setTransactions([...transactions, data]))
   }
 
   // useEffect hook to fetch data from json server

@@ -3,6 +3,7 @@ import { Button, Input } from "reactstrap";
 
 // create form component for react app
 function Form({addTransaction}){
+    
     // state variables and setter functions for form values
     const [date, setDate] = useState("")
     const [description, setDescription] = useState("")
