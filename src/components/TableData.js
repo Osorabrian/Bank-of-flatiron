@@ -14,7 +14,7 @@ function TableData({id, date, description, category, amount, deleteData}){
             <td>{description}</td>
             <td>{category}</td>
             <td>{amount}</td>
-            <Button style={{backgroundColor:"yellow"}} onClick={() => {deleteEntry()}}>Delete</Button>
+            <td><Button style={{backgroundColor:"yellow"}} onClick={() => {deleteEntry()}}>Delete</Button></td>
         </tr>
     )
 }
