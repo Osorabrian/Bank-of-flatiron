@@ -17,7 +17,7 @@ This is a simple React JS project that aims to
 
 ## Set Up Instructions
 ### Requirements
-Language: HTML, CSS, JS, REACT
+Language: HTML, CSS, JS, REACT   
 Text Editor: VS Code
 
 ## Getting Files
