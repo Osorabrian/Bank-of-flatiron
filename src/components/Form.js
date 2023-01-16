@@ -1,14 +1,25 @@
 import React, { useState } from "react"
 
-function Form(){
+function Form({addTransaction}){
 
     const [date, setDate] = useState("")
     const [description, setDescription] = useState("")
     const [category, setCategory] = useState("")
     const [amount, setAmount] = useState(0)
 
+    function handleSubmit(e){
+        e.preventDefault()
+        const formData = {
+            date,
+            description,
+            category,
+            amount
+        }
+        addTransaction(formData)
+    }
+
     return (
-        <form>
+        <form onSubmit={handleSubmit}>
         <label htmlFor="date">Date</label>
         <input 
         type="date"

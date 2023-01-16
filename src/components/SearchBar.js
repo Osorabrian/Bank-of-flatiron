@@ -1,12 +1,18 @@
 import React, { useState } from "react"
 
-function SearchBar(){
+function SearchBar({filterTransaction}){
 
     const [search, setSearch] = useState("")
 
+    function handleSubmit(e){
+        e.preventDefault()
+        filterTransaction(search)
+    }
+
     return (
         <> 
-        <input 
+        <form onSubmit={handleSubmit}>
+        <input
         type="text"
         placeholder="Search"
         value = {search}
@@ -15,6 +21,7 @@ function SearchBar(){
         }}/>
 
         <button>Search</button>
+        </form>
         </> 
     )
 }
