@@ -1,5 +1,6 @@
 import React from "react";
 import TableData from "./TableData";
+import { Table } from "reactstrap";
 
 function TransactionTable({transactions}){
 
@@ -8,7 +9,9 @@ function TransactionTable({transactions}){
     })
 
     return(
-        <table>
+        <>
+        <h2 style={{color:"red"}}>Transaction Table</h2>
+        <Table>
             <thead>
                 <tr>
                 <th>Date</th>
@@ -20,7 +23,8 @@ function TransactionTable({transactions}){
             <tbody>
                 {transaction}
             </tbody>
-        </table>
+        </Table>
+        </>
     )
 }
 

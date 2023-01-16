@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Button,Input,Form } from "reactstrap";
 
 function SearchBar({filterTransaction}){
 
@@ -11,17 +12,17 @@ function SearchBar({filterTransaction}){
 
     return (
         <> 
-        <form onSubmit={handleSubmit}>
-        <input
-        type="text"
-        placeholder="Search"
-        value = {search}
-        onChange={(e) => {
-            setSearch(e.target.value)
-        }}/>
-
-        <button>Search</button>
-        </form>
+        <Form onSubmit={handleSubmit} style={{width: "20%"}}>
+            <Input
+            type="text"
+            placeholder="Search"
+            value = {search}
+            onChange={(e) => {
+                setSearch(e.target.value)
+            }}
+            required/>
+        <Button color="primary">Search</Button>
+        </Form>
         </> 
     )
 }

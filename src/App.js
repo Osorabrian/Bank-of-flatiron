@@ -36,9 +36,10 @@ function App() {
 
   return (
     <div className="App">
-      <Header/>
-      <SearchBar filterTransaction={filterTransaction}/>
+      <Header/> 
       <Form addTransaction={addTransaction}/>
+      <hr></hr>
+      <SearchBar filterTransaction={filterTransaction}/>
       <TransactionTable transactions={transactions}/>
     </div>
   );
