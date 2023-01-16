@@ -15,7 +15,7 @@ function SearchBar({filterTransaction}){
 
     return (
         <> 
-        <Form onSubmit={handleSubmit} style={{width: "20%"}}>
+        <Form onSubmit={handleSubmit} style={{width: "20%", marginLeft: "400px"}}>
             <Input
             type="text"
             placeholder="Search"
@@ -23,7 +23,7 @@ function SearchBar({filterTransaction}){
             onChange={(e) => {
                 setSearch(e.target.value)
             }}
-            required/>
+            required/><br></br>
         <Button color="primary">Search</Button>
         </Form>
         </> 
