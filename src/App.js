@@ -40,6 +40,7 @@ function App() {
       <Form addTransaction={addTransaction}/>
       <hr></hr>
       <SearchBar filterTransaction={filterTransaction}/>
+      <hr></hr>
       <TransactionTable transactions={transactions}/>
     </div>
   );
