@@ -1,13 +1,15 @@
 import React, { useState } from "react"
 import { Button, Input } from "reactstrap";
 
+// create form component for react app
 function Form({addTransaction}){
-
+    // state variables and setter functions for form values
     const [date, setDate] = useState("")
     const [description, setDescription] = useState("")
     const [category, setCategory] = useState("")
     const [amount, setAmount] = useState(0)
 
+    // function for handling data submitted from the form
     function handleSubmit(e){
         e.preventDefault()
         const formData = {date,description,category,amount}
