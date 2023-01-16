@@ -18,7 +18,7 @@ function Form({addTransaction}){
     }
 
     return (
-        <form onSubmit={handleSubmit} style={{width: "400px", marginLeft: "400px" }}>
+        <form onSubmit={handleSubmit} style={{width: "400px", marginLeft: "500px" }}>
 
             <h3 style={{color:"blue"}}>Sumission Form</h3>
 

@@ -15,7 +15,7 @@ function SearchBar({filterTransaction}){
 
     return (
         <> 
-        <Form onSubmit={handleSubmit} style={{width: "20%", marginLeft: "400px"}}>
+        <Form onSubmit={handleSubmit} style={{width: "20%", marginLeft: "600px"}}>
             <Input
             type="text"
             placeholder="Search"
