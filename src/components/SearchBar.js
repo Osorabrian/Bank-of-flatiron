@@ -18,7 +18,7 @@ function SearchBar({filterTransaction}){
         <Form onSubmit={handleSubmit} style={{width: "20%", marginLeft: "600px"}}>
             <Input
             type="text"
-            placeholder="Search"
+            placeholder="Enter Description ..."
             value = {search}
             onChange={(e) => {
                 setSearch(e.target.value)
