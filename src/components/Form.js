@@ -30,7 +30,8 @@ function Form({addTransaction}){
                 value = {date}
                 onChange={(e) => {
                     setDate(e.target.value)
-                }}/>
+                }}
+                required/>
 
                 <label htmlFor="description">Description</label>
                 <Input
@@ -39,7 +40,8 @@ function Form({addTransaction}){
                 value = {description}
                 onChange={(e) => {
                     setDescription(e.target.value)
-                }}/>
+                }}
+                required/>
 
                 <label htmlFor="category">Category</label>
                 <Input
@@ -48,7 +50,8 @@ function Form({addTransaction}){
                 value = {category}
                 onChange={(e) => {
                     setCategory(e.target.value)
-                }}/>
+                }}
+                required/>
 
                 <label htmlFor="amount">Amount</label>
                 <Input
@@ -57,7 +60,8 @@ function Form({addTransaction}){
                 value = {amount}
                 onChange={(e) => {
                     setAmount(e.target.value)
-                }}/>
+                }}
+                required/>
                 <br></br>
                 <Button color="primary">Submit</Button>
         </form>
