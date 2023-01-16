@@ -24,6 +24,13 @@ function App() {
     .then(data => setTransactions([...transactions, data]))
   }
 
+  // function used to delete the transactions in the table
+  function deleteTransaction(id){
+    const newArray = transactions.filter(data => data.id !== id)
+    setTransactions(newArray)
+
+  }
+
   // useEffect hook to fetch data from json server
   useEffect(() => {
     fetch("http://localhost:8001/transactions", {
@@ -54,7 +61,7 @@ function App() {
       <hr></hr>
       <SearchBar filterTransaction={filterTransaction}/>
       <hr></hr>
-      <TransactionTable transactions={transactions}/>
+      <TransactionTable transactions={transactions} deleteTransaction={deleteTransaction}/>
     </div>
   );
 }

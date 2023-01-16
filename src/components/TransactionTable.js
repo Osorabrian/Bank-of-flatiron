@@ -3,12 +3,17 @@ import TableData from "./TableData";
 import { Table } from "reactstrap";
 
 // crete table for rendering transaction data
-function TransactionTable({transactions}){
+function TransactionTable({transactions, deleteTransaction}){
 
     // array map method will render the list of transactions
     const transaction = transactions.map((data) => {
-        return <TableData key={data.id} date={data.date} description={data.description} category={data.category} amount={data.amount}/>
+        return <TableData key={data.id} deleteData={deleteData} id={data.id} date={data.date} description={data.description} category={data.category} amount={data.amount}/>
     })
+
+    function deleteData(id){
+        deleteTransaction(id)
+        }
+    
 
 
     return(
