@@ -23,9 +23,10 @@ Text Editor: VS Code
 ## Getting Files
 - Fork the repo
 - Clone the repo to your local machine
-- open your terminal navigate to the repository and run ```npm start``` to run the React app.
+- open your terminal navigate to the repository and run ```npm install``` to install the dependencies.
+- After that run ```npm start``` to start the React app.
 - Open a new (second) terminal navigate to the repository once again and run ```npx json-server --watch data/db.json --port 8001``` to start the JSON server
-- You can ue the app and can make changes and see how it works out.
+- You can now use the app and can make changes and see how it works out.
   
 ## Technologies Used
 - HTML
