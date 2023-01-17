@@ -33,7 +33,7 @@ function App() {
 
   // useEffect hook to fetch data from json server
   useEffect(() => {
-    fetch("http://localhost:8001/transactions", {
+    fetch("https://bank-of-flatiron-three.vercel.app/data/db.json", {
       headers: {
         "Content-Type":"application/json",
         "Accept": "application/json"
