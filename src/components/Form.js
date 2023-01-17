@@ -20,7 +20,7 @@ function Form({addTransaction}){
     return (
         <form onSubmit={handleSubmit} style={{width: "400px", marginLeft: "500px" }}>
 
-            <h3 style={{color:"blue"}}>Sumission Form</h3>
+            <h3 style={{color:"blue"}}>Submission Form</h3>
 
                 <label htmlFor="date">Date</label>
                 <Input 
