@@ -12,16 +12,7 @@ function App() {
 
   // function to add transactions to the original array
   function addTransaction(transactionObj){
-    fetch("http://localhost:8001/transactions", {
-      method: "POST",
-      headers: {
-        "Content-Type":"application/json",
-        "Accept": "application/json"
-      },
-      body: JSON.stringify(transactionObj)
-    })
-    .then(response => response.json())
-    .then(data => setTransactions([...transactions, data]))
+    setTransactions([...transactions, transactionObj])
   }
 
   // function used to delete the transactions in the table

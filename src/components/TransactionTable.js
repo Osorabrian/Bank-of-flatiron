@@ -13,8 +13,6 @@ function TransactionTable({transactions, deleteTransaction}){
     function deleteData(id){
         deleteTransaction(id)
         }
-    
-
 
     return(
         <>
