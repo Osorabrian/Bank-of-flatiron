@@ -11,6 +11,10 @@ This is a simple React JS project that aims to
 - Enable user to search for transaction from table
 - Enable user to delete a transaction from the table
 
+
+## livelink
+https://bank-of-flatiron-three.vercel.app/   
+
 ## Screenshot
 ![image](https://user-images.githubusercontent.com/83941341/212747571-0a0c8814-1b49-463b-b521-2ef871c546c3.png)
 
@@ -25,7 +29,6 @@ Text Editor: VS Code
 - Clone the repo to your local machine
 - open your terminal navigate to the repository and run ```npm install``` to install the dependencies.
 - After that run ```npm start``` to start the React app.
-- Open a new (second) terminal navigate to the repository once again and run ```npx json-server --watch db.json --port 8001``` to start the JSON server
 - You can now use the app and can make changes and see how it works out.
   
 ## Technologies Used
