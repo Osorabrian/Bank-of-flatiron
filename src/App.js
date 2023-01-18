@@ -24,7 +24,7 @@ function App() {
 
   // useEffect hook to fetch data from json server
   useEffect(() => {
-    fetch("http://localhost:8001/transactions", {
+    fetch("https://json-server-vercel-alpha.vercel.app/transactions", {
       headers: {
         "Content-Type":"application/json",
         "Accept": "application/json"
