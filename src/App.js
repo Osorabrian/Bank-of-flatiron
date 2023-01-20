@@ -36,7 +36,7 @@ function App() {
 
   // function to filter data from array
   function filterTransaction(searchName){
-    const newArray = transactions.filter((transaction) => transaction.description === searchName)
+    const newArray = transactions.filter((transaction) => transaction.description.toLowerCase() === searchName.toLowerCase())
     if(newArray.length > 0){
       setTransactions(newArray)
     }else{

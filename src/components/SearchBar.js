@@ -10,7 +10,7 @@ function SearchBar({filterTransaction}){
     // function that calls a callback function to filter data
     function handleSubmit(e){
         e.preventDefault()
-        filterTransaction(search)
+        filterTransaction(search.trim())
     }
 
     return (
